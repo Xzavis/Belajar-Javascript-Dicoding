@@ -316,3 +316,12 @@ console.log(merged); // Output: bekerjasama
 // intinya adalah penggunaan simbol + harus di gunakan dengan tipe data yang sama seperti 
 // string dengan string 
 // dan number dengan number
+
+const currency = "IDR";
+let value = 10000;
+value += 5000;
+console.log(value);
+
+
+const money = `${currency}` + " " + `${value}`;
+console.log(money);
