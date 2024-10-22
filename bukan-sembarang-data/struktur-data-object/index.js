@@ -53,8 +53,10 @@ const siswa = {
     nama: 'Xza',
     kelas: 12,
     sekolah: 'SMKN 6',
+    2: 'bro',
 };
 // teknik dot
+console.log(siswa)
 console.log(siswa.nama) // Output: Xza
 
 // caranya
