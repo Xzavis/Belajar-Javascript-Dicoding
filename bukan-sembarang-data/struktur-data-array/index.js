@@ -81,7 +81,7 @@ console.log(`Saya mau Indomie`,pelangganWarmindo[2]); // Output: Saya mau Indomi
 // Membuat array dengan literals lebih disarankan karena lebih sederhana dan mudah untuk dibaca.
 // Contohnya seperti berikut ini.
 
-// ini adalah Array litral hanya membuat variable yang berisi value Array = []
+// ini adalah Array literal hanya membuat variable yang berisi value Array = []
 const TotalBuah = ['Apel', 'Pisang', 'Salak', 'Durian', 'Rambutan', 'Melon'];
 const jumlahPembelian = [1,2,3,4,5,6,7,8,9];
 

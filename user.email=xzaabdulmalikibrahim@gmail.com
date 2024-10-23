@@ -9,4 +9,4 @@ remote.origin.fetch=+refs/heads/*:refs/remotes/origin/*
 branch.main.remote=origin
 branch.main.merge=refs/heads/main
 branch.main.vscode-merge-base=origin/main
-user.email=xzaabdulmalikibrahim@gmail.com
+user.email=xzaabdulmalikibrahim354@gmail.com

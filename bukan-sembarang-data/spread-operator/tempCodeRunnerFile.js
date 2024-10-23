@@ -1,0 +1,1 @@
+const [Jurusan, Kelas] = classA; 
