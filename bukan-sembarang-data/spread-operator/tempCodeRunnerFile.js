@@ -1,1 +1,0 @@
-const [Jurusan, Kelas] = classA; 
