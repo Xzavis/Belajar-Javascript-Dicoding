@@ -127,7 +127,6 @@ console.log(Jurusan, `Jumlah ruangan sekolah: ${jumlahRuangan}` )
 // Karena di object user tidak ada properti jumlahRuangan,
 // ketika properti tersebut diakses akan mengembalikan nilai 3 sesuai dengan nilai default yang kita berikan.
 
-
 // Object destructuring sangat berguna sekali ketika Anda memiliki object
 // dengan properti yang banyak dan ingin mendapatkan
 // nilai masing-masing properti seperti contoh berikut.
