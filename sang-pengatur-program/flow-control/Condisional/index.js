@@ -140,4 +140,4 @@ console.log(`Anda mendapatkan Discount sebesar ${diskon * hargaDiskon}`) // disk
 
 
 // =========================================================
-// SWITCH CASE
+// SWITCH
