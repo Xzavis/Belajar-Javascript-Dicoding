@@ -43,3 +43,118 @@
 // Karena object dan class memiliki peran sangat penting di paradigma OOP, 
 // kita akan membahas cara membuatnya dengan dua cara di bawah ini.
 
+// Constructor function
+// 
+// JavaScript bukanlah bahasa pemrograman berbasis class sehingga JavaScript tidak mengenal class. 
+// Meskipun tidak mengenal class, prinsip OOP tetap dapat diterapkan. 
+// Constructor function adalah cara yang digunakan untuk membuat object dan class sebelum adanya ES6. 
+// Cara membuat object dan class menggunakan constructor function dapat dilihat pada contoh berikut.
+
+
+// function Person(name, age){
+//     this.name = name;
+//     this.age = age;
+// };
+
+// Person.prototype.eat = function() {
+//     console.log(`${this.name} sedang makan dan aku berumur ${age}`)
+// };
+
+
+// Kode di atas merupakan contoh membuat blueprint dari entitas person. 
+// JavaScript bukan bahasa pemrograman berbasis class, melainkan bahasa pemrograman berbasis 
+// prototype (prototype-based language). Oleh karena itu, Anda melihat penggunaan 
+// prototype pada contoh kode di atas. 
+
+// Prototype adalah salah satu konsep fundamental dalam JavaScript yang memungkinkan pewarisan 
+// sifat dan method antar object (akan dibahas nanti). 
+// Semua object di JavaScript memiliki properti tersembunyi bernama 
+// [[Prototype]] yang mengarah ke object prototype lain atau null.
+
+// +------------------------------------------------------------------------------------+
+// |Catatan                                                                             |
+// |                                                                                    |
+// |Properti dari sebuah object yang merujuk ke prototype-nya tidak disebut prototype.  |
+// |Namanya tidak standar antar JavaScript runtime, tetapi dalam praktiknya             |
+// |semua browser menggunakan nama __proto__.                                           |
+// |Cara standar untuk mengakses prototype sebuah object                                |
+// |adalah dengan metode Object.getPrototypeOf().                                       |
+// +------------------------------------------------------------------------------------+
+
+// buatlah terlebih dahulu variable
+// const person1 = new Person('Frank', 22);
+// const person2 = new Person('Melina', 21);
+
+// console.log(person1);
+// console.log(person2);
+
+// person1.eat();
+// person2.eat();
+
+// Jangan heran, kalau kita dapat membuat sebuah object dari sebuah function di JavaScript, 
+// itu merupakan kemampuan dari function JavaScript. Perlu diingat bahwa 
+// function tersebut berbeda dengan function biasa karena ia adalah 
+// constructor function. Selain itu, kita tidak dapat membuat object 
+// dari arrow function karena ia tidak dapat dipanggil dengan keyword new.
+
+// +-------------------------------------------------------+
+// |Catatan                                                |
+// |                                                       |
+// |Biasanya penamaan constructor function ditulis dengan  |
+// |awalan huruf besar untuk membedakan dengan penamaan    |
+// |fungsi biasa.                                          |
+// +-------------------------------------------------------+
+
+
+
+// ES6 Class
+//
+// Cara yang lebih modern untuk membuat object dan class adalah menggunakan ES6. 
+// ES6 sudah mendukung class sehingga membuat JavaScript mirip dengan bahasa lain yang berbasis class 
+// seperti Java, C++, dan C#. Berikut cara untuk membuat class.
+
+
+class Person {
+    // constructor SuperClass
+    constructor(nama, umur){
+        this.nama = nama;
+        this.umur = umur;
+    };
+
+    // method super
+    eat(){
+        console.log(`${this.nama} sedang makan`)
+    };
+};
+
+// Membuat instance dari Person
+const Person1 = new Person('Alice', 30);
+const Person2 = new Person('bob', 25);
+
+// print nama dari class person
+console.log(Person1);
+console.log(Person2);
+
+// print Method dari class person
+Person1.eat();
+Person2.eat();
+
+// PENJELASAN
+// 
+// Dengan adanya ES6, penerapan salah satu pilar OOP akan lebih mudah terutama bagi Anda yang 
+// merupakan programmer Java, C++, dan C#. Selain itu, ES6 Class juga memungkinkan kita 
+// untuk menggunakan method super untuk memanggil constructor SuperClass (akan kita bahas 
+// di materi berikutnya).
+
+// Walaupun di JavaScript sudah mendukung class, hal itu tidak mengubah JavaScript menjadi bahasa pemrograman 
+// berbasis class. Faktanya, sintaks class di JavaScript hanyalah syntactic sugar atau cara alternatif 
+// dalam mendefinisikan constructor function. Untuk membuktikan hal tersebut, 
+// kita bisa mengecek tipe class melalui operator typeof.
+
+// cek Constructor SuperClass 
+console.log(typeof Person); // Output: function
+
+// Dapat terlihat bahwa outputnya adalah function. Sejauh ini, Anda sudah mengetahui cara membuat object dan class. 
+// Pemahaman ini akan sangat membantu Anda untuk memahami OOP lebih lanjut. 
+// Ke depannya, kami hanya fokus menggunakan sintaks class daripada menggunakan 
+// constructor function. Materi selanjutnya akan lebih menarik karena membahas konsep OOP.
