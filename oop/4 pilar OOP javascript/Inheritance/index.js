@@ -129,4 +129,5 @@ console.log(Android1 instanceof Smartphone)
 
 // Berdasarkan contoh di atas, terbukti bahwa iOS dan Android adalah class yang terbuat dari 
 // constructor SmartPhones. Secara sederhana, Iphone1 dan Android1 memiliki rantai 
-// prototype dengan SmartPhones.
+// prototype dengan SmartPhones
+
