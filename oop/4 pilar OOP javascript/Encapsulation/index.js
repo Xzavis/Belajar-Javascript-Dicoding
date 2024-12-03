@@ -138,7 +138,7 @@ class CoffeeMachinePremium {
 // Jika mencoba mengakses property yang bersifat private, Anda akan mendapatkan pesan error seperti berikut ini.
 
 // https://dicoding-web-img.sgp1.cdn.digitaloceanspaces.com/original/academy/dos-6bfc0de8b3a881caeaf6347cc2f8aac220240730153534.jpeg
-coffee.#temperatureAbsolute = 180;
+// coffee.#temperatureAbsolute = 180;
 
 // Seperti itulah konsep encapsulation, membatasi bagian kode yang dapat diakses. 
 // Secara default buatlah bagian kode menjadi tidak dapat diakses, jika tidak diperlukan.
