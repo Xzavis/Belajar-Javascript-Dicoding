@@ -1,0 +1,2 @@
+ect.freeze(object);
+}
